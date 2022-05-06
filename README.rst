@@ -4,7 +4,7 @@ Documentación de los sistemas de Beyond
 
 La documentación se genera con Sphinx_.
 
-Estamos utilizaldno las librerias myst_parser_ y el theme readthedocs_
+Estamos utilizando las librerías mystparser_ y el theme readthedocs_
 
 Para generar el sitio web usar el comando::
 
