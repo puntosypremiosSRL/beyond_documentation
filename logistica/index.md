@@ -14,8 +14,9 @@ Esta documentacion aun esta en desarrollo.
 
 ```{toctree}
 :caption: 'Contenidos:'
-:maxdepth: 2
+:maxdepth: 5
 
 catalog
 requests
+purchases
 ```
