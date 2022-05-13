@@ -52,3 +52,31 @@ Dentro del catalogo, uno puede ver los productos y los productos deshabilitados.
 Si por ejemplo, Fidelitas envía un canje, pero es un código que pertenece a un producto deshabilitado, el canje es "rebotado". Una mejora posible para este caso, se puede hacer que si el producto esta deshabilitado, Fidelitas no debería recibirlo.
 
 Los productos llamados _verdes_ son productos que no se stockean físicamente, pero son dados al proveedor y se entregan a medida que son vendidos.
+
+## Productos - Recargas
+
+### Recarga virtual
+
+#### Con Código pago:
+
+La operación se hace contra Código pago, y este permite recargar sube, celulares, etc.
+
+Es una plataforma propia que se termina conectando con servicios nación, es decir, que lo gestionaba una empresa pero de manera publica.
+
+Pero ahora se hacen a partir de Código pago, por ejemplo banco hipotecario lo hace asi, y se tilda la opción de recarga virtual con el proveedor Código pago. Al tildar ese valor, podes apretar el botón de recarga virtual y te muestra los datos configurados que deben estar iguales a los de Código pago. Se selecciona el valor "Teléfono" para el tipo de beneficiario.
+
+_En teoría Macro lo sigue usando de manera directa_
+
+### Recarga sube
+
+#### Con Código pago:
+
+Se hace de la misma manera que la recarga virtual, pero a la hora de cambiar los datos luego de presionar el botón de recarga virtual, se selecciona el valor "abonado".
+
+#### Nación
+
+A la hora de crear un producto, se selecciona la opción de "Es una recarga SUBE". Se habilita la opción de Recarga SUBE, donde solo se ingresa un monto. El monto que se recarga, es el monto que indicas en este segundo formulario.
+
+### Gift cards
+
+Desde productos creas un nuevo producto, le cargas los datos que hagan falta, tildas la opción de Gift cards. Se va a habilitar el botón de Gift card, donde le agregas el id de producto y el monto para ese producto elegido.
