@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="es" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Solicitudes &mdash; documentación de Logistica - </title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/translations.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Índice" href="genindex.html" />
+    <link rel="search" title="Búsqueda" href="search.html" />
+    <link rel="next" title="Compras" href="purchases.html" />
+    <link rel="prev" title="Catálogos" href="catalog.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="index.html" class="icon icon-home"> Logistica
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Buscar documentos" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contenidos:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="catalog.html">Catálogos</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Solicitudes</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#importacion">Importación</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#actualizacion">Actualización</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#todas-las-solicitudes">Todas las solicitudes</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#buscar-una-solicitud">Buscar una solicitud</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#generar-orden-de-compra">Generar orden de compra</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#todos-los-productos">Todos los productos</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#buscar-en-todos-los-productos">Buscar en todos los productos</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#anulaciones">Anulaciones</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#anulaciones-masivas">Anulaciones masivas</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="purchases.html">Compras</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Logistica</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>Solicitudes</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/requests.md.txt" rel="nofollow"> Ver código fuente de la página</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="solicitudes">
+<h1>Solicitudes<a class="headerlink" href="#solicitudes" title="Enlazar permanentemente con este título"></a></h1>
+<div class="admonition warning">
+<p class="admonition-title">Advertencia</p>
+<p>Esta documentación aun esta en desarrollo.</p>
+</div>
+<section id="importacion">
+<h2>Importación<a class="headerlink" href="#importacion" title="Enlazar permanentemente con este título"></a></h2>
+<p>Se importan ventas de los canales que no están integrados por API, por ejemplo, mercado libre, etc.</p>
+<p>Con el botón crear, se puede crear una importación que depende del tipo de importador, la cual generalmente se usa el modelo AMEX. Pero siempre hay que mantener las columnas pactadas en el modelo.</p>
+<p>A la hora de importar una solicitud, se selecciona un catalogo, pero aparecen todos los catálogos, no solo los activos.</p>
+<p><em>Posible mejora: que se muestren solo los catálogos activos.</em></p>
+<p>A la hora de importar, se tiene que hacer una importación por dia, dado que no hay una columna por dia, por lo que se sube un excel por dia. En la columna L va el mail y en la columna O va la cantidad.</p>
+<section id="actualizacion">
+<h3>Actualización<a class="headerlink" href="#actualizacion" title="Enlazar permanentemente con este título"></a></h3>
+<p>También de este modo se puede actualizar los estados de los distribuidores.</p>
+<div class="admonition warning">
+<p class="admonition-title">Advertencia</p>
+<p>Estaría bueno que Estani nos muestre como se actualizan los estados para poder documentarlo de manera correcta dado que menciono que el cambio de estados automático es interno.</p>
+</div>
+</section>
+</section>
+<section id="todas-las-solicitudes">
+<h2>Todas las solicitudes<a class="headerlink" href="#todas-las-solicitudes" title="Enlazar permanentemente con este título"></a></h2>
+<p>Se pueden exportar, buscar y crear solicitudes desde 0.</p>
+<p>Le asignas un numero de solicitud, un catalogo, y podes crear una solicitud a mano en vez de importarlo por medio de un archivo. Se le pone los datos de la solicitud y el producto al que corresponde, que pertenece al catalogo que seleccionaste.</p>
+<p>Al agregarle un numero de solicitud y catalogo, se puede buscar y seleccionar las solicitudes existentes y poder agregarle un producto y crear una solicitud nueva.</p>
+<section id="buscar-una-solicitud">
+<h3>Buscar una solicitud<a class="headerlink" href="#buscar-una-solicitud" title="Enlazar permanentemente con este título"></a></h3>
+<p>Hay distintos filtros para aplicar y que busque las solicitudes que cumplan esos filtros.</p>
+<p>Luego también se puede exportar con los campos que uno desee.</p>
+<p>Se utiliza muy seguido, como por ejemplo para buscar una venta singular.</p>
+</section>
+<section id="generar-orden-de-compra">
+<h3>Generar orden de compra<a class="headerlink" href="#generar-orden-de-compra" title="Enlazar permanentemente con este título"></a></h3>
+<div class="admonition warning">
+<p class="admonition-title">Advertencia</p>
+<p>No utilizan mucho esto, quizás estaría bueno quitarlo.</p>
+</div>
+</section>
+</section>
+<section id="todos-los-productos">
+<h2>Todos los productos<a class="headerlink" href="#todos-los-productos" title="Enlazar permanentemente con este título"></a></h2>
+<p>No se trata de un producto en si, sino que se pueden ver las ordenes.</p>
+<section id="buscar-en-todos-los-productos">
+<h3>Buscar en todos los productos<a class="headerlink" href="#buscar-en-todos-los-productos" title="Enlazar permanentemente con este título"></a></h3>
+<p>Hay distintos filtros para aplicar y que busque las solicitudes que cumplan esos filtros.</p>
+<p>Lo que tiene de distinto al buscador de <em>Todas las solicitudes</em>, es que aca se puede seleccionar la compañía, lo cual se refiere al canal de venta/compañía vendedora.</p>
+<p>Luego también se puede exportar con los campos que uno desee.</p>
+<p>Se utiliza principalmente en el caso de que se quiere buscar/bajar un reporte de ventas porque se puede buscar por la compañía.</p>
+</section>
+</section>
+<section id="anulaciones">
+<h2>Anulaciones<a class="headerlink" href="#anulaciones" title="Enlazar permanentemente con este título"></a></h2>
+<p>Cancela la venta y devuelve el stock.</p>
+<p>Cuando se crea una nueva anulación, se pide el catalogo, el numero de la solicitud, el deposito(el almacén al cual se le devuelve el stock).</p>
+<p><em>Posible mejora: que al seleccionar la solicitud, seleccione el almacén al que pertenece</em></p>
+</section>
+<section id="anulaciones-masivas">
+<h2>Anulaciones masivas<a class="headerlink" href="#anulaciones-masivas" title="Enlazar permanentemente con este título"></a></h2>
+<p>Funciona de la misma manera que Anulaciones, pero solo se pasa la solicitud y el catálogo.</p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Pie de página">
+        <a href="catalog.html" class="btn btn-neutral float-left" title="Catálogos" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Anterior</a>
+        <a href="purchases.html" class="btn btn-neutral float-right" title="Compras" accesskey="n" rel="next">Siguiente <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Derechos de autor 2022, Numa Leone Elizalde.</p>
+  </div>
+
+  Compilado con <a href="https://www.sphinx-doc.org/">Sphinx</a> usando un
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">tema</a>
+    proporcionado por <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
