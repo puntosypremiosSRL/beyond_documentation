@@ -10,5 +10,5 @@ for html_file in *.html ; do
     mv $html_file_3 $html_file
     rm $html_file_2
 done
-# git commit -a -m "build new documentation version"
-# git push
+git commit -a -m "build new documentation version"
+git push
