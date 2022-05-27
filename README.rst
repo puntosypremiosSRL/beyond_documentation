@@ -17,6 +17,10 @@ Para generar el pdf usar el comando::
     $ cd logistica
     logistica $ make latexpdf
 
+Para generar el sitio web y subirlo a github pages usar el comando::
+
+    $ cd bin
+    bin $ ./build_docs.sh
 
 .. _Sphinx: http://sphinx-doc.org/
 
