@@ -1,4 +1,8 @@
 #!/bin/sh
+cd ..
+source env/bin/activate
+cd logistica/
+make html
 cd ../
 cp -R logistica/_build/html/** docs/
 cd docs/
