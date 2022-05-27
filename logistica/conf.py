@@ -18,8 +18,8 @@
 # -- Project information -----------------------------------------------------
 
 project = 'Logistica'
-copyright = '2022, Numa Leone Elizalde'
-author = 'Numa Leone Elizalde'
+copyright = '2022'
+author = 'Beyond'
 
 
 # -- General configuration ---------------------------------------------------
